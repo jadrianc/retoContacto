@@ -5,7 +5,7 @@ import ContactosComponent from '../pure/Contactos'
 const ListContactos = (props) => {
   const defaultContacto = new Contacto('Adrian', 'Campos', 'adrian@gmail.com', false)
 
-  const [contacto, setContacto] = useState({ defaultContacto })
+  const [contacto, setContacto] = useState(defaultContacto)
   const onLogin = () => {
     setContacto({ ...contacto, connect: !contacto.connect })
   }
